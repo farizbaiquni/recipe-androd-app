@@ -1,5 +1,7 @@
 package com.example.recipe_app_jetpack_compose.domain.model
 
+import android.os.Parcelable
+
 data class RecipeModel(
     val id: Int? = null,
     val title: String? = null,
