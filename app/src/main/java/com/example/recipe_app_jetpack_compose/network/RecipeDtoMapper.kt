@@ -40,11 +40,11 @@ class RecipeDtoMapper: DomainMapper<RecipeDto, RecipeModel> {
         )
     }
 
-    fun fromEntityList (data: List<RecipeDto>): List<RecipeModel> {
+    fun toDomainModel (data: List<RecipeDto>): List<RecipeModel> {
         return data.map { mapToDomainModel(it) }
     }
 
-    fun toEntityList (data: List<RecipeModel>): List<RecipeDto>{
+    fun fromDomainModel (data: List<RecipeModel>): List<RecipeDto>{
         return data.map { mapFromDomainModel(it) }
     }
 }
