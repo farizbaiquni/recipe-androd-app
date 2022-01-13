@@ -3,7 +3,7 @@ package com.example.recipe_app_jetpack_compose.network
 import com.google.gson.annotations.SerializedName
 
 
-class RecipeNetworkEntity(
+data class RecipeDto(
 
     @SerializedName("pk")
     var pk: Int? = null,
@@ -43,4 +43,5 @@ class RecipeNetworkEntity(
 
     @SerializedName("long_date_updated")
     var longDateUpdated: Long? = null,
+
 )
